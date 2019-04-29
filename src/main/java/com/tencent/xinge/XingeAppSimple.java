@@ -29,12 +29,13 @@ public class XingeAppSimple {
 
     /**
      * android Token 单推
+     *
      * @param title
      * @param content
      * @param token
      * @return
      */
-    public JSONObject pushTokenAndroid(String title, String content, String token){
+    public JSONObject pushTokenAndroid(String title, String content, String token) {
         PushAppRequest pushAppRequest = new PushAppRequest();
         pushAppRequest.setAudience_type(AudienceType.token);
         pushAppRequest.setPlatform(Platform.android);
@@ -60,12 +61,13 @@ public class XingeAppSimple {
 
     /**
      * android 设备列表推送
+     *
      * @param title
      * @param content
      * @param tokens
      * @return
      */
-    public JSONObject pushTokenListAndroid(String title, String content, ArrayList<String> tokens){
+    public JSONObject pushTokenListAndroid(String title, String content, ArrayList<String> tokens) {
         PushAppRequest pushAppRequest = new PushAppRequest();
         pushAppRequest.setAudience_type(AudienceType.token_list);
         pushAppRequest.setPlatform(Platform.android);
@@ -88,12 +90,13 @@ public class XingeAppSimple {
 
     /**
      * android 账号单推
+     *
      * @param title
      * @param content
      * @param account
      * @return
      */
-    public JSONObject pushAccountAndroid(String title, String content, String account){
+    public JSONObject pushAccountAndroid(String title, String content, String account) {
         PushAppRequest pushAppRequest = new PushAppRequest();
         pushAppRequest.setAudience_type(AudienceType.account);
         pushAppRequest.setPlatform(Platform.android);
@@ -119,12 +122,13 @@ public class XingeAppSimple {
 
     /**
      * android  账号列表推送
+     *
      * @param title
      * @param content
      * @param accounts
      * @return
      */
-    public JSONObject pushAccountListAndroid(String title, String content, ArrayList<String> accounts){
+    public JSONObject pushAccountListAndroid(String title, String content, ArrayList<String> accounts) {
         PushAppRequest pushAppRequest = new PushAppRequest();
         pushAppRequest.setAudience_type(AudienceType.account_list);
         pushAppRequest.setPlatform(Platform.android);
@@ -147,11 +151,12 @@ public class XingeAppSimple {
 
     /**
      * android  全推
+     *
      * @param title
      * @param content
      * @return
      */
-    public JSONObject pushAllAndroid(String title,String content){
+    public JSONObject pushAllAndroid(String title, String content) {
         PushAppRequest pushAppRequest = new PushAppRequest();
         pushAppRequest.setAudience_type(AudienceType.all);
         pushAppRequest.setPlatform(Platform.android);
@@ -172,12 +177,13 @@ public class XingeAppSimple {
 
     /**
      * android  标签推送
+     *
      * @param title
      * @param content
      * @param tag
      * @return
      */
-    public JSONObject pushTagAndroid(String title,String content,String tag){
+    public JSONObject pushTagAndroid(String title, String content, String tag) {
         PushAppRequest pushAppRequest = new PushAppRequest();
         pushAppRequest.setAudience_type(AudienceType.tag);
         pushAppRequest.setPlatform(Platform.android);
@@ -205,13 +211,14 @@ public class XingeAppSimple {
 
     /**
      * Ios 设备单推
+     *
      * @param title
      * @param content
      * @param token
      * @param environment
      * @return
      */
-    public JSONObject pushTokenIos(String title, String content,String token, String environment){
+    public JSONObject pushTokenIos(String title, String content, String token, String environment) {
         PushAppRequest pushAppRequest = new PushAppRequest();
         pushAppRequest.setAudience_type(AudienceType.token);
         pushAppRequest.setPlatform(Platform.ios);
@@ -237,13 +244,14 @@ public class XingeAppSimple {
 
     /**
      * IOS  设备列表推送
+     *
      * @param title
      * @param content
      * @param tokens
      * @param environment
      * @return
      */
-    public JSONObject pushTokenListIos(String title, String content, ArrayList<String> tokens, String environment){
+    public JSONObject pushTokenListIos(String title, String content, ArrayList<String> tokens, String environment) {
         PushAppRequest pushAppRequest = new PushAppRequest();
         pushAppRequest.setAudience_type(AudienceType.token_list);
         pushAppRequest.setPlatform(Platform.ios);
@@ -266,16 +274,16 @@ public class XingeAppSimple {
     }
 
 
-
     /**
      * ios 账号单推
+     *
      * @param title
      * @param content
      * @param account
      * @param environment
      * @return
      */
-    public JSONObject pushAccountIos(String title, String content,String account,String environment){
+    public JSONObject pushAccountIos(String title, String content, String account, String environment) {
         PushAppRequest pushAppRequest = new PushAppRequest();
         pushAppRequest.setAudience_type(AudienceType.account);
         pushAppRequest.setPlatform(Platform.ios);
@@ -302,13 +310,14 @@ public class XingeAppSimple {
 
     /**
      * ios 账号列表推送
+     *
      * @param title
      * @param content
      * @param accounts
      * @param environment
      * @return
      */
-    public JSONObject pushAccountListIos(String title, String content,ArrayList<String> accounts,String environment){
+    public JSONObject pushAccountListIos(String title, String content, ArrayList<String> accounts, String environment) {
         PushAppRequest pushAppRequest = new PushAppRequest();
         pushAppRequest.setAudience_type(AudienceType.account);
         pushAppRequest.setPlatform(Platform.ios);
@@ -332,12 +341,13 @@ public class XingeAppSimple {
 
     /**
      * ios  全推
+     *
      * @param title
      * @param content
      * @param environment
      * @return
      */
-    public JSONObject pushAllIos(String title, String content, String  environment){
+    public JSONObject pushAllIos(String title, String content, String environment) {
         PushAppRequest pushAppRequest = new PushAppRequest();
         pushAppRequest.setAudience_type(AudienceType.all);
         pushAppRequest.setPlatform(Platform.ios);
@@ -360,13 +370,14 @@ public class XingeAppSimple {
 
     /**
      * ios  标签推送
+     *
      * @param title
      * @param content
      * @param tag
      * @param environment
      * @return
      */
-    public JSONObject pushTagIos(String title, String content, String tag, String environment){
+    public JSONObject pushTagIos(String title, String content, String tag, String environment) {
         PushAppRequest pushAppRequest = new PushAppRequest();
         pushAppRequest.setAudience_type(AudienceType.tag);
         pushAppRequest.setPlatform(Platform.ios);

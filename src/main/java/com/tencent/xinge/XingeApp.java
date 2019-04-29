@@ -27,7 +27,7 @@ public class XingeApp {
     private String authStringEnc = null;
 
 
-    private RESTAPIV3 restapiV3 =  new RESTAPIV3();;
+    private RESTAPIV3 restapiV3 =  new RESTAPIV3();
 
     private OkHttpClient client;
 
